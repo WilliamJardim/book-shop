@@ -1,5 +1,20 @@
 .Book{
+   margin: 7px;
    padding: 20px;
    font-size: 30px;
    text-align: center;
+   border: dotted 2px rgb(0, 117, 185);
+   background-color: rgb(162, 208, 235);
+}
+
+.capaBook{
+   border: solid 1px black;
+}
+
+.tituloBook{
+   text-shadow: 5px 1px 1px rgb(86, 152, 226);
+}
+
+.descricaoBreveBook{
+   
 }

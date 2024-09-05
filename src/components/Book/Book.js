@@ -23,9 +23,9 @@ function Book(props){
 
     return (
         <div className={styles.Book}>
-            <img src={capa} alt={nome}></img>
-            <h2>{nome}</h2>
-            <p> {descricaoBreve} </p>
+            <img className={styles.capaBook} src={capa} alt={nome}></img>
+            <h2 className={styles.tituloBook}>{nome}</h2>
+            <p className={styles.descricaoBreveBook}> {descricaoBreve} </p>
 
             <button className='btnInfo'
                     onClick={ () => buttonClick(id) }

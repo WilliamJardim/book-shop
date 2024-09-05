@@ -64,6 +64,32 @@ function BookList(props){
                     capa="https://via.placeholder.com/150"
                     openBook={ openBook }
                 />
+
+                <Book id='livro3'
+                    nome="Escrever" 
+                    autor="William"
+                    descricaoBreve="Se torne um programador rapidinho"
+                    descricaoLonga="Aprenda a como programar em JavaScript da sua casa!. Voce vai aprender os passos necessarios para voar como programador!"
+                    paginas='20'
+                    genero='artigo'
+                    assunto='tecnologia'
+                    ano='2000'
+                    capa="https://via.placeholder.com/150"
+                    openBook={ openBook }
+                />
+
+                <Book id='livro4'
+                    nome="Escrever" 
+                    autor="William"
+                    descricaoBreve="Se torne um programador rapidinho"
+                    descricaoLonga="Aprenda a como programar em JavaScript da sua casa!. Voce vai aprender os passos necessarios para voar como programador!"
+                    paginas='20'
+                    genero='artigo'
+                    assunto='tecnologia'
+                    ano='2000'
+                    capa="https://via.placeholder.com/150"
+                    openBook={ openBook }
+                />
             </div>
             
         </>
