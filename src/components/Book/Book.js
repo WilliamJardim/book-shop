@@ -1,4 +1,4 @@
-import './Book.css';
+import styles from './Book.module.css';
 
 function Book(props){
     const {
@@ -22,12 +22,12 @@ function Book(props){
     }
 
     return (
-        <div className="Book">
+        <div className={styles.Book}>
             <img src={capa} alt={nome}></img>
             <h2>{nome}</h2>
             <p> {descricaoBreve} </p>
 
-            <button className="btn-info"
+            <button className='btnInfo'
                     onClick={ () => buttonClick(id) }
             >
                 View this book

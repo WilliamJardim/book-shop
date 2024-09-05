@@ -1,0 +1,16 @@
+.BookInfo{
+    
+}
+
+.BookInfo textarea{
+    width: 500px;
+    height: 200px;
+}
+
+.btnClose{
+    background-color: darkred;
+}
+
+.btnBuy{
+    
+}

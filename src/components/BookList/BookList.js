@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import Book from '../Book/Book';
-import './BookList.css';
 import BookInfo from '../BookInfo/BookInfo';
+import styles from './BookList.module.css'; //Os estilos do BookList
 
 function BookList(props){
 
@@ -17,20 +17,28 @@ function BookList(props){
         setBookObjToShow(bookObj);
     };
 
+
+    //Função responsável por abrir a janela de compra do livro
+    const buyBook = (bookId, bookObj) => {
+        
+    };
+
     //Funcoes responsavel por fechar a BookInfo
     const closeBook = () =>{
         setBookInfoVisivel(false);
     };
 
     return (
-        <div>
+        //Usa um fragment
+        <>
             <BookInfo isVisivel={BookInfoVisivel}
                       bookId={BookIdToShow}
                       Book={BookObjToShow}
                       closeBook={closeBook}
+                      buyBook={buyBook}
             />
 
-            <div className="BookList">
+            <div className={styles.bookList}>
                 <Book id='livro1'
                     nome="Como programar" 
                     autor="William Jardim"
@@ -58,7 +66,7 @@ function BookList(props){
                 />
             </div>
             
-        </div>
+        </>
     )
 }
 
